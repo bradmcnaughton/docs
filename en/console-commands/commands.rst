@@ -273,7 +273,7 @@ This will show your description in the Cake CLI:
 
     App:
       - user
-      └─── My custom description
+      +--- My custom description
 
 As well as in the help section of your command:
 
@@ -293,6 +293,10 @@ Testing Commands
 To make testing console applications easier, CakePHP comes with a
 ``ConsoleIntegrationTestTrait`` trait that can be used to test console applications
 and assert against their results.
+
+.. note::
+
+    For CakePHP 4.4 onwards the ``Cake\TestSuite\ConsoleIntegrationTestTrait`` namespace should be used.
 
 To get started testing your console application, create a test case that uses the
 ``Cake\TestSuite\ConsoleIntegrationTestTrait`` trait. This trait contains a method
